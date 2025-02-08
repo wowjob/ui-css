@@ -83,10 +83,11 @@
 .wow-ui-textarea {
   resize: vertical;
   border-style: solid;
-  border-width: 1px;
+  border-width: .125rem;
   border-radius: .5rem;
   width: 100%;
   max-width: 100%;
+  min-height: 5rem;
   padding: .5rem 1rem;
 }
 
