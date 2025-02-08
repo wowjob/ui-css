@@ -1,0 +1,2 @@
+import type { TGlobalKeyword } from './global-keyword';
+export type TContent = 'normal' | 'none' | `url(${string})` | `linear-gradient(${string})` | `image-set(${string})` | `${'url'}(${string}) / ${string}` | `"${string}"` | `counter(${string})` | `counter(${string}, ${string})` | `counters(${string}, ${string})` | `counters(${string}, ${string}, ${string})` | `attr(${string})` | 'open-quote' | 'close-quote' | 'no-open-quote' | 'no-close-quote' | `${string} ${string}` | TGlobalKeyword;

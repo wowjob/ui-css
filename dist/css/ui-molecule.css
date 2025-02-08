@@ -1,0 +1,46 @@
+/* src/css/molecule/button-group.css */
+.wow-ui-button-group {
+  display: flex;
+  overflow: hidden;
+  border-radius: .5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.wow-ui-button-group > a, .wow-ui-button-group > form button {
+  flex-grow: 1;
+  justify-content: center;
+  width: 100%;
+}
+
+.wow-ui-button-group > a:not(:first-child):not(:last-child), .wow-ui-button-group > form:not(:first-child):not(:last-child) button {
+  border-radius: 0;
+}
+
+html[dir="ltr"] .wow-ui-button-group:not(.flex-direction) > a:first-child, html[dir="ltr"] .wow-ui-button-group:not(.flex-direction) > form:first-child button {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+html[dir="rtl"] .wow-ui-button-group:not(.flex-direction) > a:first-child, html[dir="rtl"] .wow-ui-button-group:not(.flex-direction) > form:first-child button, html[dir="ltr"] .wow-ui-button-group:not(.flex-direction) > a:last-child, html[dir="ltr"] .wow-ui-button-group:not(.flex-direction) > form:last-child button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+html[dir="rtl"] .wow-ui-button-group:not(.flex-direction) > a:last-child, html[dir="rtl"] .wow-ui-button-group:not(.flex-direction) > form:last-child button {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+html[dir="ltr"] .wow-ui-button-group.flex-direction > a:first-child, html[dir="ltr"] .wow-ui-button-group.flex-direction > form:first-child button, html[dir="rtl"] .wow-ui-button-group.flex-direction > a:first-child, html[dir="rtl"] .wow-ui-button-group.flex-direction > form:first-child button {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+html[dir="ltr"] .wow-ui-button-group.flex-direction > a:last-child, html[dir="ltr"] .wow-ui-button-group.flex-direction > form:last-child button, html[dir="rtl"] .wow-ui-button-group.flex-direction > a:last-child, html[dir="rtl"] .wow-ui-button-group.flex-direction > form:last-child button {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* src/css/ui-molecule.css */
+

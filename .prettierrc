@@ -1,0 +1,8 @@
+{
+  "singleQuote": true,
+  "semi": false,
+  "indent": ["error", 2],
+  "importOrder": ["^[a-z]", "^@", "^[./]"],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
+}

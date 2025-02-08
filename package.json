@@ -1,0 +1,75 @@
+{
+  "version": "0.0.3",
+  "name": "@wowjob/ui-css",
+  "author": "Marian Zburlea",
+  "license": "MIT",
+  "scripts": {
+    "tree": "tree -I \"node_modules\"",
+    "build-ui": "bun src/css/ui.ts",
+    "build-css": "bun build-css.js",
+    "build-js": "tsc --outDir dist",
+    "release": "npm publish && git checkout main && git pull && ./tag.sh",
+    "tag": "git checkout main && git pull && ./tag.sh && git checkout dev",
+    "build": "bun run build-ui && bun run build-css.js && bun run build-js"
+  },
+  "description": "Yet Another CSS UI library, which provides zero build time, best debugging DX, very flexible, reposniveness for RWD at core, and works with React, NextJS, Astro and more",
+  "keywords": [
+    "ui-css",
+    "ui-css-ui",
+    "css",
+    "ui",
+    "ui library",
+    "css library",
+    "css-in-js",
+    "rwd",
+    "responsive design",
+    "zero build time",
+    "developer experience",
+    "dx",
+    "css debugging",
+    "react",
+    "nextjs",
+    "astro",
+    "responsive css",
+    "flexible css",
+    "modern css",
+    "design system",
+    "component library",
+    "utility-first css",
+    "framework-agnostic",
+    "css utilities"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wowjob/ui-css.git"
+  },
+  "module": "index.ts",
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    },
+    "./all.css": "./dist/css/all.css",
+    "./ui.css": "./dist/css/ui.css",
+    "./ui-atom.css": "./dist/css/ui-atom.css",
+    "./ui-molecule.css": "./dist/css/ui-molecule.css",
+    "./ui-organism.css": "./dist/css/ui-organism.css",
+    "./all.min.css": "./dist/css/all.min.css",
+    "./reset.css": "./dist/css/reset.css"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "^1.1.14",
+    "nano-css": "^5.6.2",
+    "typescript": "^5.7.2"
+  }
+}

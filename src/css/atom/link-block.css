@@ -1,0 +1,12 @@
+.wow-ui-link-block {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-decoration: underline;
+  transition: 250ms;
+}
+
+.wow-ui-link-block:hover {
+  color: red
+}

@@ -1,0 +1,94 @@
+/* src/css/atom/button.css */
+.wow-ui-button {
+  display: flex;
+  cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  cursor: pointer;
+  pointer-events: all;
+  border-radius: 2rem;
+  align-items:  center;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 100%;
+  height: 3rem;
+  padding: 1rem 2rem;
+  transition: all .25s;
+  font-size: 1rem;
+}
+
+#wow-ui .wow-ui-button:hover {
+  color: hsla(var(--tch), var(--tcs), calc(100% - var(--tcl)), var(--tca));
+  background-color: hsla(var(--tch), var(--tcs), calc(100% - var(--bgcl)), var(--tca));
+}
+
+#wow-ui .wow-ui-button:focus-visible {
+  color: hsla(var(--tch), var(--tcs), calc(100% - var(--tcl)), var(--tca));
+  background-color: hsla(var(--tch), var(--tcs), calc(100% - var(--bgcl)), var(--tca));
+}
+
+.wow-ui-button:disabled, .wow-ui-button[aria-disabled="true"] {
+  filter: grayscale(.8);
+  cursor: no-drop;
+}
+
+.wow-ui-button__label {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* src/css/atom/flex.css */
+.wow-ui-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* src/css/atom/input.css */
+.wow-ui-input {
+  border-style: solid;
+  border-width: .125rem;
+  border-radius: .5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 100%;
+  height: 3rem;
+  padding: 0 1rem;
+}
+
+/* src/css/atom/link-block.css */
+.wow-ui-link-block {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-decoration: underline;
+  transition: all .25s;
+}
+
+.wow-ui-link-block:hover {
+  color: red;
+}
+
+/* src/css/atom/text.css */
+.wow-ui-text {
+  color: inherit;
+}
+
+/* src/css/atom/textarea.css */
+.wow-ui-textarea {
+  resize: vertical;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: .5rem;
+  width: 100%;
+  max-width: 100%;
+  padding: .5rem 1rem;
+}
+
+/* src/css/ui-atom.css */
+

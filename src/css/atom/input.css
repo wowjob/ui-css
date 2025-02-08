@@ -1,0 +1,10 @@
+/* wow-ui-input */
+.wow-ui-input {
+  border-width: 0.125rem; 
+  border-style: solid;
+  border-radius: 0.5rem;
+  height: 3rem;
+  padding: 0 1rem;
+  width: fit-content;
+  max-width: 100%;
+}

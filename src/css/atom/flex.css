@@ -1,0 +1,6 @@
+/* wow-ui-flex */
+.wow-ui-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

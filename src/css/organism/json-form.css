@@ -1,0 +1,6 @@
+/* .wow-ui-json-form */
+.wow-ui-json-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

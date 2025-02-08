@@ -1,0 +1,1 @@
+export { condensedFour } from './four'

@@ -1,0 +1,9 @@
+/* src/css/organism/json-form.css */
+.wow-ui-json-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* src/css/ui-organism.css */
+

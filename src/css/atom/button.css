@@ -1,0 +1,38 @@
+/* wow-ui-button */
+.wow-ui-button {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  width: fit-content;
+  transition: 250ms;
+  border-radius: 2rem;
+  height: 3rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
+  font-size: 1rem;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+#wow-ui .wow-ui-button:focus-visible,
+#wow-ui .wow-ui-button:hover {
+  color: hsla(var(--tch), var(--tcs), calc(100% - var(--tcl)), var(--tca));
+  background-color: hsla(var(--tch), var(--tcs), calc(100% - var(--bgcl)), var(--tca));
+}
+
+.wow-ui-button:disabled,
+.wow-ui-button[aria-disabled="true"] {
+  filter: grayscale(0.8);
+  cursor: no-drop;
+}
+
+.wow-ui-button__label {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  pointer-events: none;
+}

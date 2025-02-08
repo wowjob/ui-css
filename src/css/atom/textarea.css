@@ -1,0 +1,10 @@
+/* wow-ui-textarea */
+.wow-ui-textarea {
+  resize: vertical;
+  max-width: 100%;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
