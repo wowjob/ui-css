@@ -33,6 +33,10 @@
   cursor: no-drop;
 }
 
+.wow-ui-button[data-in-progress="true"] {
+  cursor: progress;
+}
+
 .wow-ui-button__label {
   display: block;
   white-space: nowrap;
@@ -87,7 +91,7 @@
   border-radius: .5rem;
   width: 100%;
   max-width: 100%;
-  min-height: 5rem;
+  min-height: 10rem;
   padding: .5rem 1rem;
 }
 

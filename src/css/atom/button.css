@@ -29,6 +29,10 @@
   cursor: no-drop;
 }
 
+.wow-ui-button[data-in-progress="true"] {
+  cursor: progress;
+}
+
 .wow-ui-button__label {
   display: block;
   white-space: nowrap;
